@@ -78,4 +78,4 @@ if "target" in message:
     message += "\nNote that diskmonitor may continue reporting scsi target errors for up to one day after replacing bad disk."
 if message != "":
     message += "\ndiskmonitor run at "+time.strftime("%H:%M, %b %d")
-    sendMail(recipients, "diskmonitor@"+host+".colorado.edu", message, host)
+    sendMail(recipients, "diskmonitor@"+host, message, host)
